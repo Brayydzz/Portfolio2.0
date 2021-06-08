@@ -1,6 +1,12 @@
+:root {
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 31;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,12 +19,12 @@ body {
     z-index: 1;
 }
 
-.sect-container {
+/* .sect-container {
     width: 100%;
     height: 100%;
-}
+} */
 
-section {
+.main-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,9 +32,97 @@ section {
     text-align: center;
     width: 100%;
     height: 100vh;
-    outline: auto;
+    background: darkgrey;
 }
 
-section p {
-    font-size: 1.5rem;
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.skill-container {
+    height: 600px;
+    width: 60%;
+    margin-top: -90px;
+    background: white;
+}
+
+#home h1 {
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+}
+
+#home h1::before,
+#home h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#home h1::before {
+    background:darkgrey;
+    animation: 
+        typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+#home h1::after{
+    width: 0.125em;
+    background: black;
+    animation: 
+        typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+        blinking 750ms steps(var(--typewriterCharacters)) infinite;
+    
+}
+
+
+
+#home p {
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+.subtitle {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 
+    calc(var(--typewriterSpeed) + 2s) forwards
+}
+
+.about-img {
+    max-width: 350px;
+    border-radius: 50%;
+    max-height: 100%;
+}
+
+.about-p {
+ font-size: 1rem;   
+}
+
+
+/* ---------------- KEYFRAMES -------------- */
+
+@keyframes typewriter {
+    to { 
+        left: 100%; 
+    }
+}
+
+@keyframes blinking {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
