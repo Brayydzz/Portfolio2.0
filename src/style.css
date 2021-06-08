@@ -1,5 +1,5 @@
 :root {
-    --typewriterSpeed: 6s;
+    --typewriterSpeed: 4s;
     --typewriterCharacters: 31;
 }
 
@@ -32,7 +32,19 @@ body {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: darkgrey;
+    background: grey;
+}
+
+.about-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #003566;
 }
 
 .skills-section {
@@ -42,14 +54,16 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
 }
 
 .skill-container {
     height: 600px;
     width: 60%;
-    margin-top: -90px;
+    margin-top: -80px;
     background: white;
+    border-radius: 10px;
+    border: darkgrey solid 1px;
 }
 
 #home h1 {
@@ -68,7 +82,7 @@ body {
 }
 
 #home h1::before {
-    background:darkgrey;
+    background:white;
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
 }
@@ -96,7 +110,7 @@ body {
 }
 
 .about-img {
-    max-width: 350px;
+    max-width: 250px;
     border-radius: 50%;
     max-height: 100%;
 }
