@@ -8,7 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="script.js" async></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Home Page</title>
 </head>
 <body>
@@ -47,7 +49,7 @@
                             <img class="about-img"  src="img/main-portrait.jpg" alt="">
                     </div>
         </section>
-        <!-- ABOUT AND SKILLS SECTION -->
+        <!-- ABOUT SECTION -->
         <section class="container-fluid about-section" id='about'>
                 <div class='row d-flex flex-column align-items-center'>
                     <div class='col'>
@@ -66,9 +68,97 @@
                     </div>
                 </div>
         </section>
-        <section class='container-fluid skills-section'>
+        <!-- SKILLS SECTION -->
+        <section class='container-fluid skills-section' id="skills">
             <div class="skill-container">
-                <h1>SKILLS</h1>
+                <h1 class="section_title">Skills</h1>
+                <span class="section_subtitle">My Tech Stack</span>
+
+                <div class="skills-inside-container row">
+                    <!-- Skills 1 -->
+                    <div class="col">
+                        <div class="skills-content skills-open">
+                            <div class="skills-header">
+                                <i class="uil uil-laptop skills-icon"></i>
+                                <div>
+                                    <h2 class="skills-title">Frontend Development</h2>
+                                </div>
+                                <i class="uil uil-angle-down skills-arrow"></i>
+                            </div>
+                            <div class="skills-list grid">
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">HTML</h3>
+                                        <span class="skills-number">90%</span>
+                                    </div>
+                                    <div class="skills-bar ">
+                                        <span class="skills-percentage skills-html"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">CSS</h3>
+                                        <span class="skills-number">65%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-css"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">JavaScript</h3>
+                                        <span class="skills-number">50%</span>
+                                    </div>
+                                    <div class="skills-bar ">
+                                        <span class="skills-percentage skills-js"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills 2 -->
+                    <div class="col">
+                        <div class="skills-content skills-close">
+                            <div class="skills-header">
+                                <i class="uil uil-server skills-icon"></i>
+                                <div>
+                                    <h2 class="skills-title">Backend Development</h2>
+                                </div>
+                                <i class="uil uil-angle-down skills-arrow"></i>
+                            </div>
+                            <div class="skills-list grid">
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Ruby</h3>
+                                        <span class="skills-number">80%</span>
+                                    </div>
+                                    <div class="skills-bar ">
+                                        <span class="skills-percentage skills-ruby"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Rails</h3>
+                                        <span class="skills-number">75%</span>
+                                    </div>
+                                    <div class="skills-bar ">
+                                        <span class="skills-percentage skills-rails"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Postgresql</h3>
+                                        <span class="skills-number">60%</span>
+                                    </div>
+                                    <div class="skills-bar ">
+                                        <span class="skills-percentage skills-sql"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="container-fluid main-section" id='projects'>
