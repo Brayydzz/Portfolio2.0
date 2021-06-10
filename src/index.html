@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="script.js" defer></script>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Home Page</title>
@@ -72,22 +77,25 @@
         </section>
         <!-- ABOUT SECTION -->
         <section class="container-fluid about-section" id='about'>
-                <div class='row d-flex flex-column align-items-center'>
-                    <div class='col'>
-                        <h1>Hey! I'm Brayden</h1>
+                    <div class="about-title">
+                        <h1>About Me</h1>
+                        <span>Hi! I'm Brayden</span>
                     </div>
-                    <div class='col'>
-                        <img class="about-img"  src="img/drum-portrait.jpg" alt="">
-                    </div>
-                    <div class="col col-md-6">
+            <div class='row d-flex justify-content-center align-items-center'>
+                <div class='col about-image'>
+                    <img class="about-img"  src="img/drum-portrait.jpg" alt="">
+                </div>
+                <div class="col-sm about-content d-flex flex-column align-items-center">
+                    <div class="row d-flex justify-content-center">
                         <p class="about-p">
-                            I am passionate about the combination of knowledge, 
-                            skill and technology and the way that they can combine to create new opportunities, 
-                            new strategies and solutions to old problems. I have the skills, and experience, to create,
-                            discover and improve life experiences for you and your customers.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur laboriosam eius nisi a enim iusto facilis voluptatibus corrupti reiciendis consectetur. Fugiat, vitae architecto quis distinctio quaerat delectus dolor quidem laborum?
                         </p>
+                        <a download='' href="img/test-resume.pdf" class="button button--flex">
+                            Download CV<i class="uil uil-import button_icon"></i>
+                        </a>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- SKILLS SECTION -->
         <section class='container-fluid skills-section' id="skills">
@@ -182,13 +190,47 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid main-section" id='projects'>
-            <h1>THIS IS MY PORTFOLIO</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Aliquid cum deleniti quisquam iste, perferendis inventore.
-            </p>
+
+        <!------------ PROJECTS ------------>
+        <section class="projects section" id='projects'>
+            <h2 class="section_title">Projects</h2>
+            <span class="section_subtitle">Most recent work</span>
+            <div class="project_container contain swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="project_content grid swiper-slide">
+                        <img src="img/the-pro-shop.png" alt="" class="project_img">
+                        <div class="project_data">
+                            <h3 class="project_title">The Pro Shop</h3>
+                            <p class="project_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis impedit officiis non, minima reiciendis!</p>
+                            <a href="#" class="button button_flex projects_button">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon "></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project_content grid swiper-slide">
+                        <img src="img/flipbet.png" alt="" class="project_img">
+                        <div class="project_data">
+                            <h3 class="project_title">Flip Bet</h3>
+                            <p class="project_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis impedit officiis non, minima reiciendis!</p>
+                            <a href="#" class="button button_flex projects_button">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
         </section>
+
+        <!-- CONTACT -->
         <section class="container-fluid main-section" id='contact'>
             <h1>THIS IS MY CONTACT PAGE</h1>
             <p>
@@ -197,5 +239,11 @@
             </p>
         </section>
     </div>
+
+    <!-- JS Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

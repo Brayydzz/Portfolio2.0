@@ -1,4 +1,4 @@
-// Accordion Skills Toggle
+//---------------------- Accordion Skills Toggle ----------------------
 
 const skillsContent = document.getElementsByClassName('skills-content')
         
@@ -19,7 +19,7 @@ skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)  
 })
 
-//------------------------------- Navigation Menu
+//---------------------- Navigation Menu ----------------------
 
 const navMenu = document.getElementById('nav-menu')
 
@@ -43,7 +43,7 @@ if(navToggle) {
 // }
 
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*---------------------- REMOVE MENU MOBILE ----------------------*/
 const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
@@ -52,3 +52,22 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+// ---------------------- Project Swiper ---------------------- 
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
