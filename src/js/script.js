@@ -55,7 +55,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 // ---------------------- Project Swiper ---------------------- 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.project_container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -63,6 +63,7 @@ const swiper = new Swiper('.swiper-container', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
   
     // Navigation arrows

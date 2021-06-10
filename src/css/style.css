@@ -47,15 +47,20 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    margin: 0 0 3rem 0;
     height: 100vh;
     background-color: var(--back-light);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 /* NAVBAR */
 
 /* Reusable CSS */
 
 .section {
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 2rem;
 }
 
 .section_title {
@@ -80,8 +85,8 @@ body {
 
 .contain{
     max-width: 768px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
 }
 
 .header {
@@ -176,6 +181,18 @@ ul {
     background: var(--back-light);
 }
 
+.footer-section {
+    margin-bottom: 50px;
+}
+
+.contact-section {
+    width: 100%;
+    height: 130vh;
+    background: var(--back-light);
+}
+
+
+
 .about-section {
     color: white;
     text-align: center;
@@ -191,8 +208,7 @@ ul {
 }
 
 .about-title {
-    padding-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .about-content {
@@ -236,7 +252,7 @@ ul {
     padding: 5px;
     height: 100%;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 20px;
     background: white;
     border-radius: 10px;
     border: darkgrey solid 1px;
@@ -343,6 +359,10 @@ ul {
     overflow: initial;
 }
 
+.projects {
+    padding-top: 75px;
+}
+
 .project_content {
     padding: 0 1.5rem;
 }
@@ -365,6 +385,12 @@ ul {
 .projects_button:hover .button_icon {
     transform: translateX(.25rem);
 }
+
+.swiper-button-prev {
+}
+
+
+
 
 /* ----------------------HOME PAGE EFFECTS---------------------- */
 
@@ -430,6 +456,57 @@ ul {
  font-size: 1rem;   
 }
 
+
+/* ---------------- Contact ----------------  */
+.contact_inputs {
+    margin-bottom: 1.5rem;
+}
+
+.contact_container {
+    row-gap: 3rem;
+    margin-bottom: 60px;
+}
+
+.contact_information {
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+
+.contact_icon {
+    font-size: 2rem;
+    margin-bottom: var(--mb-0-75);
+}
+
+.contact_title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact_subtitle {
+    font-size: var(--small-font-size);
+}
+
+.contact_content {
+    background-color: var(--back-dark);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+
+}
+
+.contact_label {
+    font-size: var(--x-small-font-size);
+}
+
+.contact_input {
+    width: 100%;
+    background-color: var(--back-dark);
+    color: var(--second-colour);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+
+}
 
 /* ---------------- KEYFRAMES -------------- */
 
