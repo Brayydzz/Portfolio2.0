@@ -22,7 +22,7 @@
     --x-small-font-size: .75rem;
 
     --font-medium: 500;
-    --dont-semi-bold: 600;
+    --font-semi-bold: 600;
 
     /* MARGIN BOTTOM */
 
@@ -174,6 +174,8 @@ ul {
 }
 
 .home_content {
+    display: flex;
+    justify-content: center;
     grid-template-columns: 25px 300px;
     padding-top: 3.5rem;
     align-items: center;
@@ -199,7 +201,7 @@ ul {
     justify-content: center;
 }
 
-/* ---------------------------------- */
+/* ---------------- SECTIONS ------------------ */
 
 .main-section {
     display: flex;
@@ -213,7 +215,7 @@ ul {
 }
 
 .footer-section {
-    margin-top: 230px;
+    margin-top: 160px;
     margin-bottom: 50px;
 }
 
@@ -222,6 +224,9 @@ ul {
     height: 130vh;
     background: var(--back-light);
 }
+
+
+/* ------- ABOUT -------- */
 
 .about-section {
     color: white;
@@ -416,14 +421,12 @@ ul {
     transform: translateX(.25rem);
 }
 
-.swiper-button-prev {
-}
 
 
 /* ----------------------HOME PAGE EFFECTS---------------------- */
 
 
-#home h1 {
+/* #home h1 {
     font-family: 'Source Code Pro', monospace;
     position: relative;
 }
@@ -462,7 +465,7 @@ ul {
 
 #home p {
     font-family: 'Source Code Pro', sans-serif;
-}
+} */
 
 .hello {
     padding-bottom: 30px;
@@ -617,7 +620,7 @@ a:link {
 
 /* MEDIA QUERIES  */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .header {
         top: 0;
         bottom: initial;
@@ -650,6 +653,69 @@ a:link {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90vh;
+    }
+
+    .about-image {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .about-title {
+        padding-top: 0px;
+    }
+
+    .about-p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .skill-container {
+        height: 75%;
+    }
+
+    .projects {
+        padding-top: 75px;
+    }
+
+    .contact_info {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contact-section {
+        height: 100vh;
+        padding-top: 75px;
+    }
+
+    .footer-section {
+        margin-top: 170px;
+        padding-top: 0;
+    }
+
+    .footer_container {
+        margin: 10px;
+    }
+
+    .footer_bg {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 905px) {
+    .footer {
+        padding-top: 2rem;
+    }
+    
+    .footer-section {
+        margin-top: 200px;
     }
 }
 
