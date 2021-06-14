@@ -21,26 +21,25 @@ skillsHeader.forEach((el) =>{
 
 //---------------------- Navigation Menu ----------------------
 
-const navMenu = document.getElementById('nav-menu')
 
-const navToggle = document.getElementById('nav-toggle')
 
 const navClose = document.getElementById('nav-close')
 
 // Menu Show
-
-if(navToggle) {
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
+function menuOpen() {
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.add('show-menu')
 }
 
-// Menu Hide
-// if(navClose){
-//     navClose.addEventListener('click', () =>{
-//         navMenu.classList.remove('show-menu')
-//     }
-// }
+function menuHide() {
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+
+const navToggle = document.getElementById('icon-closed')
+navToggle.addEventListener("click", menuOpen)
+navClose.addEventListener("click", menuHide)
+
 
 
 /*---------------------- REMOVE MENU MOBILE ----------------------*/

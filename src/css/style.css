@@ -426,7 +426,7 @@ ul {
 /* ----------------------HOME PAGE EFFECTS---------------------- */
 
 
-/* #home h1 {
+#home h1 {
     font-family: 'Source Code Pro', monospace;
     position: relative;
 }
@@ -465,7 +465,7 @@ ul {
 
 #home p {
     font-family: 'Source Code Pro', sans-serif;
-} */
+}
 
 .hello {
     padding-bottom: 30px;
@@ -542,7 +542,7 @@ ul {
 /* ---------------- Footer --------------- */
 
 .footer {
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .footer_container{
@@ -618,7 +618,7 @@ a:link {
 }
 
 
-/* MEDIA QUERIES  */
+/* ---------------- MEDIA QUERIES --------------  */
 
 @media screen and (min-width: 767px) {
     .header {
